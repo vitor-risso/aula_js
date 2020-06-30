@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Digite seu pais</h1>
+    <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="verificar" onclick="verify()">
+
+
+    <div id="res">
+
+    </div>
+
+    <script>
+        function verify(){
+
+            var pais = document.querySelector('input#txtpais')
+            var txt = document.querrySlecetor('div#res')
+            var resposta = pais.value
+
+            txt.innerHTML = `vc é do(a) ${resposta}`
+            
+
+        }
+    </script>
+</body>
+</html>

@@ -15,14 +15,20 @@
 
     </div>
 
-    <script>
+    <script >
         function verify(){
 
             var pais = document.querySelector('input#txtpais')
-            var txt = document.querrySlecetor('div#res')
-            var resposta = pais.value
+            var txt  = document.querySelector('div#res')
+            var fin = Text(pais.value)
+    
+            txt.innerHTML = `vc é do(a) ${pais}`
 
-            txt.innerHTML = `vc é do(a) ${resposta}`
+            if (fin == `Brasi`){
+                txt.innerHTML = `Você é brasileiro`
+            } else {
+                txt.innerHTML = `Você é estrangeiro`
+            }
             
 
         }

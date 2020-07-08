@@ -1,0 +1,14 @@
+/*console.log('ola')
+console.log('ola')
+console.log('ola')
+console.log('ola')
+console.log('ola')
+console.log('ola')
+console.log('ola')*/
+
+var i = 1
+
+while (i<9999999999999999999999999999999999999999999999999999999999999){
+    console.log(`${i}`)
+    i++
+}
